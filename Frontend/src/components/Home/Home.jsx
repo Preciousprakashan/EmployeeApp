@@ -1,4 +1,6 @@
 import * as React from 'react';
+import EditIcon from '@mui/icons-material/ModeEditOutlineTwoTone';
+import DeleteIcon from '@mui/icons-material/DeleteTwoTone';
 import {
     Paper,
     Table,
@@ -202,14 +204,14 @@ function Home() {
                                                     color="primary"
                                                     onClick={() => handleEdit(row._id)}
                                                 >
-                                                    Edit
+                                                    <EditIcon/>
                                                 </Button>
                                                 <Button
                                                     size="small"
                                                     color="primary"
                                                     onClick={() => handleDelete(row._id)}
                                                 >
-                                                    Delete
+                                                    <DeleteIcon sx={{ color: 'red' }}/>
                                                 </Button>
                                             </TableCell>
                                         </TableRow>

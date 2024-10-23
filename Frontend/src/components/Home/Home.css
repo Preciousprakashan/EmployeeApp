@@ -1,0 +1,51 @@
+/* .custom{ 
+background-color: #121212;
+opacity:80%;
+color: #ffffff;
+  } */
+
+  
+  @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+  
+  body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure uniform card size */
+.card {
+  height:400px;
+  width: 320px; /* Adjust this width if needed */
+  background-color: #002660;
+}
+
+/* Style for the card media image */
+.card-media {
+  height: 200px; /* Height of the image */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Adjust the content padding */
+.card-content {
+  padding: 16px; /* Standard padding */
+  
+}
+
+.action1 {
+  transition: transform 0.3s ease;  /* Smooth transition effect */
+}
+
+.action1:hover {
+  transform: scale(1.05); /* Scales the card to 105% of its original size */
+}
+
+.carousel-item {
+  height: 100vh; /* Set the desired height */
+}
+
+.carousel-item img {
+  height: 100%; /* Make sure the image covers the full height */
+  object-fit: cover; /* Maintain aspect ratio while filling the area */
+}
